@@ -1163,10 +1163,10 @@ function init(module) {
         let varg3 = getArrayU8FromWasm(arg3, arg4);
         getObject(arg0).getBufferSubData(arg1 >>> 0, arg2, varg3);
     };
-    imports.wbg.__wbindgen_closure_wrapper2097 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper2005 = function(arg0, arg1, arg2) {
 
-        const f = wasm.__wbg_function_table.get(179);
-        const d = wasm.__wbg_function_table.get(180);
+        const f = wasm.__wbg_function_table.get(163);
+        const d = wasm.__wbg_function_table.get(164);
         const b = arg1;
         const cb = function(arg0) {
             this.cnt++;

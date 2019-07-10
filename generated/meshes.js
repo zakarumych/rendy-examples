@@ -274,9 +274,6 @@ function init(module) {
     imports.wbg.__widl_f_framebuffer_texture_2d_WebGL2RenderingContext = function(arg0, arg1, arg2, arg3, arg4, arg5) {
         getObject(arg0).framebufferTexture2D(arg1 >>> 0, arg2 >>> 0, arg3 >>> 0, getObject(arg4), arg5);
     };
-    imports.wbg.__widl_f_framebuffer_texture_layer_WebGL2RenderingContext = function(arg0, arg1, arg2, arg3, arg4, arg5) {
-        getObject(arg0).framebufferTextureLayer(arg1 >>> 0, arg2 >>> 0, getObject(arg3), arg4, arg5);
-    };
     imports.wbg.__wbg_get_f6922348004f9279 = function(arg0, arg1) {
         try {
             return addHeapObject(Reflect.get(getObject(arg0), getObject(arg1)));
@@ -746,6 +743,9 @@ function init(module) {
     imports.wbg.__widl_f_enable_vertex_attrib_array_WebGLRenderingContext = function(arg0, arg1) {
         getObject(arg0).enableVertexAttribArray(arg1 >>> 0);
     };
+    imports.wbg.__widl_f_framebuffer_texture_layer_WebGL2RenderingContext = function(arg0, arg1, arg2, arg3, arg4, arg5) {
+        getObject(arg0).framebufferTextureLayer(arg1 >>> 0, arg2 >>> 0, getObject(arg3), arg4, arg5);
+    };
     imports.wbg.__widl_f_copy_buffer_sub_data_with_i32_and_i32_and_i32_WebGL2RenderingContext = function(arg0, arg1, arg2, arg3, arg4, arg5) {
         getObject(arg0).copyBufferSubData(arg1 >>> 0, arg2 >>> 0, arg3, arg4, arg5);
     };
@@ -1116,10 +1116,6 @@ function init(module) {
             handleError(e);
         }
     };
-    imports.wbg.__widl_f_get_buffer_sub_data_with_i32_and_u8_array_WebGL2RenderingContext = function(arg0, arg1, arg2, arg3, arg4) {
-        let varg3 = getArrayU8FromWasm(arg3, arg4);
-        getObject(arg0).getBufferSubData(arg1 >>> 0, arg2, varg3);
-    };
     imports.wbg.__wbindgen_cb_drop = function(arg0) {
         const obj = takeObject(arg0).original;
         if (obj.cnt-- == 1) {
@@ -1143,6 +1139,10 @@ function init(module) {
     imports.wbg.__widl_f_now_Performance = function(arg0) {
         return getObject(arg0).now();
     };
+    imports.wbg.__widl_f_get_buffer_sub_data_with_i32_and_u8_array_WebGL2RenderingContext = function(arg0, arg1, arg2, arg3, arg4) {
+        let varg3 = getArrayU8FromWasm(arg3, arg4);
+        getObject(arg0).getBufferSubData(arg1 >>> 0, arg2, varg3);
+    };
     imports.wbg.__widl_f_buffer_sub_data_with_i32_and_u8_array_WebGL2RenderingContext = function(arg0, arg1, arg2, arg3, arg4) {
         let varg3 = getArrayU8FromWasm(arg3, arg4);
         getObject(arg0).bufferSubData(arg1 >>> 0, arg2, varg3);
@@ -1151,10 +1151,10 @@ function init(module) {
         let varg3 = getArrayU8FromWasm(arg3, arg4);
         getObject(arg0).bufferSubData(arg1 >>> 0, arg2, varg3);
     };
-    imports.wbg.__wbindgen_closure_wrapper1792 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper1829 = function(arg0, arg1, arg2) {
 
-        const f = wasm.__wbg_function_table.get(128);
-        const d = wasm.__wbg_function_table.get(129);
+        const f = wasm.__wbg_function_table.get(133);
+        const d = wasm.__wbg_function_table.get(134);
         const b = arg1;
         const cb = function(arg0) {
             this.cnt++;
